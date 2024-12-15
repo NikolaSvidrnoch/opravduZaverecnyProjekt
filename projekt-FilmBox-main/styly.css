@@ -133,4 +133,82 @@ video[controls] + .player-controls {
 	  display: none;
 	}
   }
+  .card-img-top {
+    height: 600px; 
+    object-fit: cover; 
+    width: 100%; 
+}
+
+.star {
+    font-size: 30px;
+    color: #ccc;
+    cursor: pointer;
+}
+.star:hover,
+.star.selected {
+    color: gold;
+}
+
+.stars {
+    display: flex;
+    gap: 5px;
+}
+.button-star {
+    cursor: pointer;
+    font-size: 24px;
+    color: #ffc107;
+}
+
+.is-invalid + .invalid-feedback {
+    margin-top: -1px; /* Mezera mezi vstupem a textem */
+    font-size: 0.9rem;   /* Menší text pro zpětnou vazbu */
+    color: #dc3545;      /* Červená barva pro chyby */
+}
+
+.form-check .invalid-feedback {
+    display: block; /* Zajistí zobrazení pod checkboxem */
+    margin-top: 0.25rem;
+    font-size: 0.9rem;
+    color: #dc3545;
+}
+
+.form-check {
+    position: relative;
+}
+
+.form-check .invalid-feedback {
+    display: block;      
+    margin-top: 1rem; 
+    font-size: 0.9rem;    
+    color: #dc3545;      
+    position: absolute;  
+    left: 0;              
+}
+
+button[type="submit"] {
+    margin-top: 1rem; /* Zvýšíme prostor nad tlačítkem */
+}
+
+.invalid-feedback {
+    display: none;
+}
+
+/* Zvýšíme mezeru mezi chybovou hláškou a formulářovými prvky */
+.invalid-feedback {
+	margin-top: 60px; /* Mezera mezi chybovou hláškou a prvkem */
+	margin-bottom: 12px; /* Mezera pod chybovou hláškou */
+  }
   
+
+
+  .pause {
+    display: none;
+}
+
+.playing .pause {
+    display: inline-block;
+}
+
+.playing .play {
+    display: none;
+}
